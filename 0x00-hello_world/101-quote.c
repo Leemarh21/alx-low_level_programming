@@ -1,14 +1,12 @@
-#include <stdio.h>
+#include <unistd.h>
 
 /**
- * main - prints a text
- *
- * Description: using the main function
- * this program prints "Programming is like building a multilingual puzzle
- * Return: 0
+ * Description: main - prints out the stdout
+ * Return: 1 if successful
  */
 int main(void)
 {
-	write(2, "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n",59);
+	char Str1[] = "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n";
+	write(2, Str1, 59);
 	return (1);
 }
