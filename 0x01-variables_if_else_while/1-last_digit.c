@@ -11,11 +11,11 @@ int main(void)
 
 {
 int n;
-char[] = "Last digit of";
+char( "Last digit of");
 
 srand(time(0));
 n = rand() - RAND_MAX / 2;
-ptintf("%s %d is %d and is", last, n, n % 10);
+printf("%s %d is %d and is", last, n, n % 10);
 
 if (n % 10 > 5)
 {
