@@ -1,5 +1,5 @@
 #include "main.h"
-
+#include <stdio.h>
 /**
  * _isupper - return 1 if parameter is uppercase alphabet
  * @c: the character to check
