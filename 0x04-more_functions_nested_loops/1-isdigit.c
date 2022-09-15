@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /**
- * _isdigit - return 1 if parameter is isdigit
+ * _isdigit - return 1 if parameter is a digit or not
  * @c: the character to check
  * Return: 0 (failure)
  */
@@ -10,18 +10,10 @@
 int -isdigit(int c)
 {
 
-	int i;
-
-
-	for (i = '0'; i <= '9'; i++)
+	if ((c >= 48) && (c <= 57))
 	{
-
-		if (i == c)
-		{
-			return (1);
-		}
+		return (1);
 	}
 
 	return (0);
-
 }
