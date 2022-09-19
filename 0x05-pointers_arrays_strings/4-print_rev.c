@@ -1,3 +1,5 @@
+#include <stdio.h>
+#include <sting.h>
 #include "main.h"
 
 /**
