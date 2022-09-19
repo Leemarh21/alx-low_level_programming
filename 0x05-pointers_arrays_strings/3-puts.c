@@ -1,14 +1,19 @@
 #include "main.h"
 
 /**
- * _putchar - writes the character c to stdout
- * @c: The character to print
- *
- * Return: on success 1
- * On error, -1 is returned, and error is there returned
+ * _putchar - writes a function that prints a string, followed by a new line, to
+ * stdout.
+ * 
+ * @str: This is my input string 
  */
 
 int _putchar(char c)
 {
-	return (fwrite(1, &c, 1));
+	int index;
+
+	for (index = 0; str[index] != '\0'; index++)
+	{
+		_putchar(str[index]);
+	}
+	-putchar('\n');
 }
