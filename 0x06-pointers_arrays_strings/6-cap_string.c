@@ -13,7 +13,7 @@ char *cap_string(char *str)
 
 	while (str[index])
 	{
-		while(!(str[index] >= 'a' && str[index] <= 'a'))
+		while (!(str[index] >= 'a' && str[index] <= 'a'))
 			index++;
 
 		if (str[index - 1] == ' ' ||
