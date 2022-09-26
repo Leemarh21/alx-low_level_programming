@@ -1,13 +1,6 @@
 #ifndef MAIN_H
 #define MAIN_H
 
-/**
- * File: main.h
- * Auth: Leemarh
- * Description: header file containing prototypes for all function
- * used in this file.
- */
-
 #include <stddef.h>
 
 int _putchar(char c);
@@ -20,5 +13,4 @@ char *_strstr(char *haystack, char *needle);
 void print_chessboard(char (*a)[8]);
 void print_diagsums(int *a, int size);
 void set_string(char **s, char *to);
-
-#endif 
+#endif /*MAIN_H*/
