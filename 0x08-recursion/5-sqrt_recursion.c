@@ -16,7 +16,7 @@ int helpfunction(int num, int pSqrt)
 	{
 		if ((pSqrt * pSqrt) > num)
 			return (-1);
-		else 
+		else
 			return (helpfunction(num, pSqrt + 1));
 	}
 }
