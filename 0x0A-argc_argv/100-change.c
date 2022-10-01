@@ -29,7 +29,8 @@ int main(int argc, char **argv)
 			c -= 25;
 
 		else if (c >= 10)
-			c -= 10;	
+			c -= 10;
+		
 		else if (c >= 5)
 			c -= 5;
 
