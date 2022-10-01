@@ -6,7 +6,7 @@
 /**
  * coinConverter - helper function that does all the mathematics
  * @i: paased in variables from main for calculations
- * Return: number of coins needed 
+ * Return: number of coins needed
  */
 int coinConverter(innt i)
 {
