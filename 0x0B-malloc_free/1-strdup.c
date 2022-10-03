@@ -11,7 +11,7 @@
  */
 char *_strdup(char *str)
 {
-	char *rstr;
+	char *nstr;
 	unsigned int len, i;
 
 	/* check is str is null */
@@ -40,4 +40,5 @@ char *_strdup(char *str)
 	}
 	nstr[len] = '\0';
 	return (nstr);
+
 }
