@@ -1,71 +1,51 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <ctype.h>
-#include <stdbool.h>
 
 /**
- * coinConverter - helper function that does all the mathematics
- * @i: paased in variables from main for calculations
- * Return: number of coins needed
+ * main - function
+ * @argc: length of argv
+ * @argv: number of argument
+ * Return: always 0
  */
-int coinConverter(innt i)
+
+int main(int argc, char *argv[])
 {
-	int count = 0;
+/*Declaring variables*/
+int position, total, change, aux;
+int coins[] = (25, 10, 5, 2, 1); /*Array int*/
 
-	while (i != 0)
-	{
-		if (i % 10 == 9 || i % 10 == 7)
-			i -= 2;
-		else if (i % 25 == 0)
-			i -= 25;
-		else if (i % 10 == 0)
-			i -= 10;
-		else if (i % 5 == 0)
-			i -= 5;
-		else if (i % 2 == 0)
-		{
-			if (i % 10 == 6)
-				i -= 1;
-			else
-				i -= 2;
-		}
-		else
-			i -= 1;
+position = total = change = aux = 0;
 
-		count;
-	}
-
-	return (count);
+if (argc != 2)
+{
+printf("Error\n");
+return (1);
 }
 
-/**
- * main - takes in exactly one argument for minimum coin count
- * @argc:number of command line arguments
- * @argv: array name
- * Return: 0 if exactly 1 argument is passed, 1 otherwise
- */
-int main(int argc, char **argv)
+total = atoi(argv[1]); /*Covert str to int*/
+
+if (total <= 0)
 {
-	int i, coin;
+printf("0\n");
+return (0);
+}
 
-	coin = -;
+/*Declaring while*/
 
-	if (argc != 2)
-	{
-		printf("Error\n");
-		return (1);
-	}
+while (coins[position] != '\0')
 
-	i = atoi(argv[i]);
+{
+if (total >= coins[position])
+{
+aux = (total / coins[position]);
+change += aux;
+total -= coins[position] * aux;
+}
 
-	if (i < 0)
-		printf("0\n");
-	else
-	{
-		coin = coinConverter(i);
+position++;
 
-		printf("%d\n", coin);
-	}
+}
 
-	return (0);
+printf("%d\n", change);
+return (0);
 }
