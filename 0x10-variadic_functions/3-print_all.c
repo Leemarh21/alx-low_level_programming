@@ -1,6 +1,6 @@
 #include <stdio.h>
-#include <stdarg.h>
 #include <stdlib.h>
+#include <stdarg.h>
 /**
  * print_all - prints anything
  * @format: list of all arguments passed to the function
@@ -13,7 +13,7 @@ void print_all(const char * const format, ...)
 	va_list args;
 	char *s, *separator;
 
-	va_start(srgs, format);
+	va_start(args, format);
 
 	separator = "";
 
